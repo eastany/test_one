@@ -1,0 +1,341 @@
+
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>SmartAdmin - Responsive WebApp</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="MyOrange">
+    <meta name="copyright" content="MyOrange">
+    <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+    <meta name="date" content="2014-03-02T00:00:00+01:00">
+
+    <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+
+
+
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+
+    <script>document.createElement('section');var duration='500',easing='swing';</script>
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        html{background-color:#FFFFFF;color:#383838;}
+        ::-moz-selection{background:#444444;color:#DDDDDD;}
+        ::selection{background:#444444;color:#DDDDDD;}
+        #documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+        a{color:#0000FF;}
+        .btn {
+            border-radius:3px;
+        }
+        .btn-primary {
+            background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+            background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+            background-image: linear-gradient(top, #0088CC, #0044CC);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+            border-color: #0044CC #0044CC #bfbfbf;
+            color:#FFFFFF;
+        }
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+            border-color: #0088CC #0088CC #bfbfbf;
+            background-color: #0044CC;
+        }
+        hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+        #documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+        #documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+        #documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+        #documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+        #documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+        #documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+        #documenter_copyright{display:block !important;visibility:visible !important;}
+    </style>
+
+</head>
+<body class="documenter-project-smartadmin">
+<div id="documenter_sidebar">
+    <a href="#documenter_cover" id="documenter_logo"></a>
+    <ul id="documenter_nav">
+        <li><a class="current" href="#documenter_cover">Start</a></li>
+
+        <li><a href="#introduction" title="Introduction">Introduction</a></li>
+        <li><a href="#unpacking" title="Unpacking">Unpacking</a></li>
+        <li><a href="#themes" title="Themes">Themes</a></li>
+        <li><a href="#less_files" title="LESS Files">LESS Files</a>
+            <ul>
+                <li><a href="#less_files_compile_instructions">Compile Instructions</a>
+            </ul>
+        </li>
+        <li><a href="#ajax_version" title="AJAX VERSION">AJAX VERSION</a></li>
+        <li><a href="#html_non_ajax_version" title="HTML (non-AJAX) VERSION">HTML (non-AJAX) VERSION</a></li>
+        <li><a href="#layout_api" title="Layout API">Layout API</a></li>
+        <li><a href="#page_structure" title="Page Structure">Page Structure</a></li>
+        <li><a href="#icons" title="Icons">Icons</a></li>
+        <li><a href="#forms" title="Forms">Forms</a></li>
+        <li><a href="#plugins" title="Plugins">Plugins</a></li>
+        <li><a href="#charts" title="Charts">Charts</a></li>
+        <li><a href="#statistic_elements" title="Statistic Elements">Statistic Elements</a></li>
+        <li><a href="#ui_elements" title="UI Elements">UI Elements</a></li>
+        <li><a href="#tables" title="Tables">Tables</a></li>
+        <li><a href="#datatables" title="Datatables">Datatables</a></li>
+        <li><a href="#smart_widgets" title="Smart Widgets">Smart Widgets</a></li>
+        <li><a href="#intro_to_app_js" title="Intro to App.js">Intro to App.js</a></li>
+        <li><a href="#animation_css" title="Animation.css">Animation.css</a></li>
+        <li><a href="#licenses" title="Licenses">Licenses</a></li>
+        <li><a href="#support_and_faqs" title="Support and FAQs">Support and FAQs</a></li>
+        <li><a href="#updates" title="Updates">Updates</a></li>
+
+    </ul>
+    <div id="documenter_copyright">Copyright MyOrange 2014<br>
+        made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
+    </div>
+</div>
+<div id="documenter_content">
+<section id="documenter_cover">
+    <h1>SmartAdmin</h1>
+    <h2>Responsive WebApp</h2>
+    <div id="documenter_buttons">
+
+    </div>
+    <hr>
+    <ul>
+        <li>created: 01/19/2014</li>
+        <li>latest update: 03/02/2014</li>
+        <li>by: MyOrange</li>
+        <li><a href=""></a></li>
+        <li>email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#121;&#111;&#114;&#97;&#110;&#103;&#101;&#46;&#99;&#97;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#109;&#121;&#111;&#114;&#97;&#110;&#103;&#101;&#46;&#99;&#97;</a></li>
+    </ul>
+    <p>Thank you for purchasing SmartAdmin Responsive WebApp. If you have any questions that are beyond the scope of this help file, please feel free to email  me via the email address above.</p>
+</section>
+
+<section id="introduction">
+    <div class="page-header"><h3>Introduction</h3><hr class="notop"></div>
+    <p>
+        <span id="docs-internal-guid-5edc7fad-dbc5-6bfe-137b-c8ba186cff74"><strong>SmartAdmin WebApp</strong> - goes beyond the ordinary admin template. Its unique flat design and responsive layout is crafted one of a kind. SmartAdmin comes with 40+ customized jquery plugins including 5 unique plugins (exclusively catered for SmartAdmin). SmartAdmin Layout API lets you customize your project for almost any device - be it Mobile, Web or WebApp - SmartAdmin has you covered!</span></p>
+    <p>
+        SmartAdmin is exclusively sold at <a href="https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0">wrapbootstrap.com</a>;&nbsp;please make sure you save your license ID for support and future upgrades.</p>
+    <p>
+        To re-download updates - please register/login to <a href="https://wrapbootstrap.com/signin">wrapbootstrap.com</a>&nbsp;and go to attach <a href="https://wrapbootstrap.com/support/download-resender">orders page</a> for the free download link. If you are having problems with the re-download, please contact wrapbootstrap <a href="https://wrapbootstrap.com/support">support</a></p>
+    <p>
+        <iframe allowfullscreen="" frameborder="0" height="281" mozallowfullscreen="" src="http://player.vimeo.com/video/87025094" webkitallowfullscreen="" width="500"></iframe></p>
+    <div class="alert alert-info">
+        <em><strong>SmartAdmin is built with the latest version of Bootstrap Framework (v3 +). You can find more about bootstrap and its documentation in the following languages below:</strong></em><br>
+        <br>
+        <div>
+            <a href="http://getbootstrap.com/getting-started">Bootstrap English (US)</a></div>
+        <div>
+            <a href="http://v3.bootcss.com/">Bootstrap (Chinese)</a></div>
+        <div>
+            <a href="http://www.oneskyapp.com/docs/bootstrap/fr">Bootstrap en Fran&ccedil;ais (French)</a></div>
+        <div>
+            <a href="http://holdirbootstrap.de/">Bootstrap auf Deutsch (German)</a></div>
+        <div>
+            <a href="http://www.oneskyapp.com/docs/bootstrap/ru">Bootstrap (Russian)</a></div>
+        <div>
+            <a href="http://www.oneskyapp.com/docs/bootstrap/es">Bootstrap en Espa&ntilde;ol (Spanish)</a></div>
+        <a href="http://twbs.site-konstruktor.com.ua/">Bootstrap ua (Ukrainian)&nbsp;</a></div>
+    <p>
+        <span id="docs-internal-guid-04e2137e-ff2c-5b55-4e01-1a6975723e42"><img height="272px;" src="https://lh5.googleusercontent.com/CGfTsEzPTf7W6nonT4w_OoBa8ndYDAjWqMggImJJEDt6m7RSgrYLe_qUesqIpWhS7iM8c82PLyBtWBbWoSUIasApq3t3k5Gn6yMSSnONu5TzYdQM91ROjFW1FA" style="border: 0px solid transparent" width="624px;"></span></p>
+    <p>
+        <a href="https://wrapbootstrap.com/support/download-resender">https://wrapbootstrap.com/support/download-resender</a></p>
+    <p>
+        &nbsp;</p>
+    <div class="alert alert-info">
+        <strong>There is a <a href="http://bootstraphunter.com/smartadmin/BUGTRACK/track_">SmartAdmin Bug Tracker</a>&nbsp;which you can use to keep track of all issues, fixes and potential updates/features. This page is regularly updated so please sure to bookmark.</strong></div>
+    <p>
+        &nbsp;&nbsp;<img height="449px;" src="https://lh6.googleusercontent.com/c3_MgkJVwgedwyx2F5XI8KPhfTZna3_kxWq64wnJHZdhpepBZYhPwG-T4e9T1IAN4vWHOlENnUgknFzf1QygesyQsxQogmvMf5UIjqVbhe6zjbwApEfELg6WhA" style="border: 0px solid transparent;" width="535px;"></p>
+</section>
+<section id="unpacking">
+    <div class="page-header"><h3>Unpacking</h3><hr class="notop"></div>
+    <p>
+        Once you have successfully downloaded SmartAdmin from Wrapbootstrap.com, you will notice right away that the zip folder contains the following:</p>
+    <p>
+        <span id="docs-internal-guid-6a2251a3-fa29-ca84-1ed7-a488f12d12c7"><img height="140px;" src="https://lh3.googleusercontent.com/xpPBgadciiXW_BaUle40Js4qWpVPsWHFYqD9YK5aNf-4GfvWmGaUeQZ8SVyO8Ij4OqddtiuIcubVHp0dWswOD-JWAkQOnd8AsGZmRCVItuM61nSGSsrTDYtzSQ" style="border: 0px solid transparent" width="504px;"></span></p>
+    <p>
+        Click the <strong>Developer</strong> folder and you will arrive to the choices below:&nbsp;</p>
+    <p>
+        <br>
+        <span id="docs-internal-guid-6a2251a3-fa27-3407-5321-25d715388305"><img height="140px;" src="https://lh5.googleusercontent.com/r-IejOnrA6xgcDBRd-kmLJ9w32DAwlTzqFw_WSi8fNRnecUHvkwdyOZn1c92Gy2acC_nb8xk4sYYXWwCDUQOX4bnTB_fHbKBAXH3-2Bhexr9vDCa3pw_nA9CVA" style="border: 0px solid transparent" width="504px;"></span></p>
+    <p>
+        Both, AJAX and the HTML (NON-AJAX ) version for Smartadmin, looks and functions the same. However, the behaviour of the way how the navigation works and how the Scripts are loaded are different.&nbsp;</p>
+    <p>
+        Select the appropriate version for your project to begin. If you are an <strong>ASP.NET</strong> user, it is best suited to go with the HTML_version (NON-AJAX)</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <br>
+        &nbsp;</p>
+</section>
+<section id="themes">
+    <div class="page-header"><h3>Themes</h3><hr class="notop"></div>
+    <div class="alert alert-info">
+        <em><strong>SmartAdmin comes with 5 built in unique themes! You can easily change the theme by selecting the Layout options or by hardcoding the theme name to the &lt;body&gt; tag</strong></em></div>
+    <p>
+        <strong>Smart Default</strong></p>
+<pre>
+<span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body class</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">=</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(0, 0, 230);">smart-style-0</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">/</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span> </pre>
+    <p>
+        <img height="448px;" src="https://lh5.googleusercontent.com/C60D_-1OknQaBGwFruePr8MXFRz2Eqcl9farnwns6_kNBLIDFoUs8pgarH_FiESgV96YT83IUHn9rvCdbR6c9O-sSFMu7BXIphiElVMSRkMWkdiuRzSPkaRhpA" style="border: 0px solid transparent;" width="624px;"></p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <b>Dark Elegance</b></p>
+<pre>
+<span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body class</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">=</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(0, 0, 230);">smart-style-1</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">/</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span><span style="line-height: 19px;"> </span></pre>
+    <p>
+        <span id="docs-internal-guid-25f26d6d-dc3c-e4aa-ce8a-fc331fecb5c6"><img height="448px;" src="https://lh5.googleusercontent.com/cQaGmtkvgU4-_Ksu8fgFMHCEIJ-EV0KzRF0OdnUHRy1TViCTXtRh58pQaI4bm7eP3YpPE-yTs8CSF_oD68TwEZOSExCcEs5tHi9huukYLjNqXg4sJEM1uwQ64Q" style="border: 0px solid transparent" width="624px;"></span></p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <strong>Ultra White</strong></p>
+<pre>
+<span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body class</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">=</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(0, 0, 230);">smart-style-2</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">/</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span><span style="line-height: 19px;"> </span></pre>
+    <p>
+        <span id="docs-internal-guid-25f26d6d-dc3c-a82b-5fe2-88ac88d087e5"><img height="448px;" src="https://lh4.googleusercontent.com/73LgufpfwRZ1mGmQBj513kiPMpcrMztufnbkXzB6zf2F2dHWAeFV6Wq_LUKitJ2zPFHZcgF-4JYW2VHxMqrDHpsZoOtfBftw_tCgoqnZDSTl33U6YWe-KhLq-w" style="border: 0px solid transparent" width="624px;"></span></p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <strong>Google Skin (google analytics)</strong></p>
+<pre>
+<span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body class</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">=</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(0, 0, 230);">smart-style-3</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 0, 0);">&quot;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">.</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&lt;</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">/</span><span style="line-height: 19px; color: rgb(0, 0, 0); font-size: medium;">body</span><span style="line-height: 19px; font-size: medium; color: rgb(128, 128, 48);">&gt;</span><span style="line-height: 19px;"> </span></pre>
+    <p>
+        <img height="448px;" src="https://lh6.googleusercontent.com/H-rURxL-5W5hFJHTmr_68xmODrgjoZhbViP5CTipPjePiEt6XkEpIHIFTKvRR8qh4VeUwAlaKwJMnigkhNC87a0Bi4urLgvlg70dWEz7h5CE1jrugl1aAFGvpA" style="border: 0px solid transparent;" width="624px;"></p>
+    <div class="alert alert-info">
+        <em><strong>You can create your own skins by changing the LESS variables. See the LESS Settings section of this documentation for more details</strong></em></div>
+</section>
+<section id="less_files">
+    <div class="page-header"><h3>LESS Files</h3><hr class="notop"></div>
+    <p>
+        You will find the SmartAdmin LESS files under the COMMON_ASSETS folder located inside the Developer Folder. You will also find the Email templates here.&nbsp;</p>
+    <div class="alert alert-success">
+        <em><strong>Upgrading manually</strong>: Please note, when you plan to upgrade manually, for example upgrading bootstrap 3.1 to 3.1.2, you will need to place the new folder inside the &#39;<strong>less</strong>&#39; folder, open &#39;<strong>bootstrap.less</strong>&#39; to change the new file references, and finally open &#39;<strong>variables.less</strong>&#39; to upgrade any new variables that they may have introduced.&nbsp;<br>
+            <br>
+            <strong>Normally I will only upgrade less files when there is a major release (for example 3.1, 3.2, 3.3 etc)</strong></em></div>
+    <p>
+        <span id="docs-internal-guid-3e7b2c45-63f3-cb29-5939-acf5c794b5b2"><img alt="" height="714px;" src="https://lh5.googleusercontent.com/jDwFcMVnkbI1FpY9bNczR790NGOTgOanjrrUFx6AjihEP1j8lj8_OamkemNPhULujmf20UWI9J2laaqgbsdm6n9ggtRg-ajdbc5fuaAm_2LgaOXjrGHZieITDQ" style="border: 0px solid transparent" width="618px;"></span></p>
+    <h4 id="less_files_compile_instructions">Compile Instructions</h4>
+    <div>
+        To generate your CSS file from these LESS files. Download winLess from going to <a href="http://winless.org/">http://winless.org/</a> (for windows) and mac users can go to (<a href="http://incident57.com/less/">http://incident57.com/less/</a>) - they are both small apps/programs.&nbsp;</div>
+    <div>
+        &nbsp;</div>
+    <div>
+        Once installed load up and drop in the less folder to the &#39;Less Files&#39; zone. Deselect all pre-selected LESS files and only select &quot;smartadmin-production.less&quot; or &quot;bootstrap.less&quot; - depending on what CSS file you wish to generate. This will rely on the variables of <em><strong>variables.less </strong></em>file to custom cut and fit your CSS file.</div>
+    <div>
+        &nbsp;</div>
+    <div>
+        Hit compile and it should automatically create a minified CSS file!</div>
+    <div>
+        &nbsp;</div>
+    <div class="alert alert-info">
+        <strong>You can also use Prepros, another alternative LESS compiler with greater CSS compression! </strong><br>
+        <em>Download link: <a href="http://alphapixels.com/prepros/">http://alphapixels.com/prepros/&nbsp;</a></em></div>
+</section>
+<section id="ajax_version">
+    <div class="page-header"><h3>AJAX VERSION</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="html_non_ajax_version">
+    <div class="page-header"><h3>HTML (non-AJAX) VERSION</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="layout_api">
+    <div class="page-header"><h3>Layout API</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="page_structure">
+    <div class="page-header"><h3>Page Structure</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.</p>
+</section>
+<section id="icons">
+    <div class="page-header"><h3>Icons</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="forms">
+    <div class="page-header"><h3>Forms</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="plugins">
+    <div class="page-header"><h3>Plugins</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="charts">
+    <div class="page-header"><h3>Charts</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="statistic_elements">
+    <div class="page-header"><h3>Statistic Elements</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="ui_elements">
+    <div class="page-header"><h3>UI Elements</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="tables">
+    <div class="page-header"><h3>Tables</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="datatables">
+    <div class="page-header"><h3>Datatables</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="smart_widgets">
+    <div class="page-header"><h3>Smart Widgets</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="intro_to_app_js">
+    <div class="page-header"><h3>Intro to App.js</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="animation_css">
+    <div class="page-header"><h3>Animation.css</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="licenses">
+    <div class="page-header"><h3>Licenses</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="support_and_faqs">
+    <div class="page-header"><h3>Support and FAQs</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+<section id="updates">
+    <div class="page-header"><h3>Updates</h3><hr class="notop"></div>
+    <p class="info" style="margin: 18px 0px; padding: 10px 10px 10px 30px; border: 1px solid rgb(106, 179, 255); outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; background-color: rgb(163, 208, 255); background-image: url(assets/images/image_2.png); color: rgb(56, 56, 56); background-position: 8px 11px; background-repeat: no-repeat no-repeat;">
+        This is a demo documnetaion only - FULL Documentation will be made available to purchased users only.&nbsp;</p>
+</section>
+
+</div>
+</body>
+</html>
