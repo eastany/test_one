@@ -1,4 +1,3 @@
-smartadmin-1.4-angular-version
+test
 ==============================
-
-smartadmin-1.4-angular-version
+aaa
